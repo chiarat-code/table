@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Customization Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Customize Your Table</h1>
+
+    <!-- Table Preview -->
+    <div class="table-preview">
+      <img id="table-img" src="images/table_round_light_brown.png" alt="Table Preview">
+    </div>
+
+    <!-- Shape Selection -->
+    <div class="options">
+      <label for="shape">Shape:</label>
+      <select id="shape" onchange="updateTable()">
+        <option value="round">Round</option>
+        <option value="rectangular">Rectangular</option>
+        <option value="square">Square</option>
+      </select>
+    </div>
+
+    <!-- Color Selection -->
+    <div class="options">
+      <label for="color">Color:</label>
+      <select id="color" onchange="updateTable()">
+        <option value="light_brown">Light Brown</option>
+        <option value="dark_brown">Dark Brown</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="grey">Grey</option>
+        <option value="light_grey">Light Grey</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+      </select>
+    </div>
+
+    <!-- Accessories Selection -->
+    <div class="options">
+      <label for="accessories">Accessories:</label>
+      <select id="accessories" onchange="updateTable()">
+        <option value="none">None</option>
+        <option value="flower">Flower Vase</option>
+        <option value="fruit_bowl">Fruit Bowl</option>
+        <option value="lamp">Lamp</option>
+      </select>
+    </div>
+
+    <!-- Wood Type Selection -->
+    <div class="options">
+      <label for="wood-type">Wood Type:</label>
+      <select id="wood-type">
+        <option value="oak">Oak</option>
+        <option value="maple">Maple</option>
+        <option value="walnut">Walnut</option>
+        <option value="pine">Pine</option>
+        <option value="teak">Teak</option>
+        <option value="cherry">Cherry</option>
+      </select>
+    </div>
+
+    <!-- Display Selected Wood Type -->
+    <div class="wood-type-display">
+      <p id="wood-type-display">Selected Wood Type: Oak</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
