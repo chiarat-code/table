@@ -15,7 +15,7 @@
     
     <div class="container">
         <!-- Image Display for Table -->
-        <img id="table-img" src="images/table_round_light_brown.png" alt="Customized Table">
+        <img id="table-img" src="images/table round light brown.png" alt="Customized Table">
         
         <!-- Shape Selection -->
         <label>Choose Shape:</label>
@@ -70,9 +70,9 @@
             let accessories = document.getElementById("accessories").value;
             
             // Construct the image name based on selections
-            let imageName = `images/table_${shape}_${color}`;
+            let imageName = `images/table ${shape} ${color}`;
             if (accessories !== "none") {
-                imageName += `_${accessories}`;
+                imageName += ` ${accessories}`;
             }
             imageName += ".png";
             
